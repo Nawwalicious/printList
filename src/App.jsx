@@ -1,10 +1,9 @@
-import PrintList from "./PrintList"
-import PrintList2 from "./PrintList2"
+import DisplayText from "./DisplayText"
 
 function App() {
 
   return (
-    <PrintList2/>
+    <DisplayText/>
   )
 }
 

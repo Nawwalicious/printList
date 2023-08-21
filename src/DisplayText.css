@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.InputField{
+    padding: 15px;
+}
+
+.InputField label{
+    font-weight: bolder;
+}
+
+.DisplayField{
+    padding: 15px;
+    font-weight: bolder;
+}
+
+ul{
+    padding-left: 15px;
+}
