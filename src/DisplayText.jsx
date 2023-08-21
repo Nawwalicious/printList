@@ -6,12 +6,14 @@ function DisplayText() {
   const [userInput, setUserInput] = useState("");
 
   function handleUpdateListItem() {
-    setListItem([...listItem, userInput]);
-    setUserInput("");
+    if (userInput !== "") {
+      setListItem([...listItem, userInput]);
+      setUserInput("");
+    }
   }
 
   function handleUserInput(event) {
-    setUserInput(event.target.value);
+      setUserInput(event.target.value);
   }
 
   function handleDeleteListItem(val) {
@@ -22,27 +24,27 @@ function DisplayText() {
   return (
     <div>
       <div className='InputField'>
-        <label>
-          Enter Content Here:
-          <input type="text" value={userInput} onChange={handleUserInput}/>
-          <button type="button" onClick={handleUpdateListItem}>
-            Submit
-          </button>
-        </label>
+
+        <label>To do list</label><br></br>
+          <input type="text" value={userInput} onChange={handleUserInput} placeholder='Enter Tasks'/>
+          <button type="button" onClick={handleUpdateListItem}> Submit </button>
+
       </div>
 
       <div className='DisplayField'>
-        <p>
-          Items:
+        <p>Items:</p>
+
+          <ul >
           {listItem.map((item, index) => (
-            <ul key={index}>
-              <li>
-                {item}
-                <button type="button" onClick={() => handleDeleteListItem(item)}>X</button>
+            
+              <li key={index}>
+                <div className='listData'>{item}</div>
+                <div className='listDeleteButton'><button type="button" onClick={() => handleDeleteListItem(item)}>X</button></div>
               </li>
-            </ul>
           ))}
-        </p>
+          </ul>
+        
+
       </div>
     </div>
   );

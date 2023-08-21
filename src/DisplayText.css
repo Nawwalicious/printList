@@ -1,22 +1,82 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 .InputField{
-    padding: 15px;
+    padding: 25px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .InputField label{
-    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.InputField input{
+    padding: 5px;
+    width: 40%;
+    margin-top: 10px;
+}
+
+.InputField button{
+    padding: 5px;
+    margin-left: 10px;
+    width: 7.5%;
+}
+
+.InputField button:hover {
+    background-color: #72a2d4;
+    border: 1px solid gray;
+    border-radius: 2px;
+    height: 28px;
 }
 
 .DisplayField{
-    padding: 15px;
-    font-weight: bolder;
+    margin-top: 10px;
+    padding: 25px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-ul{
-    padding-left: 15px;
+.DisplayField p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17.5px;
+}
+
+.DisplayField li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.listData{
+    border-bottom: 1px solid rgb(190, 190, 190);
+    width: 20%;
+    margin: 5px 5px 5px 5px;
+}
+
+.listDeleteButton{
+    margin: 5px 5px 5px 25px;
+}
+
+.listDeleteButton button{
+    padding:0 25px ;
+}
+
+.listDeleteButton button:hover{
+    
+    border: 1px solid gray;
+    border-radius: 2px;
+    height: 20px;
+    background-color: rgb(212, 124, 124);
 }
