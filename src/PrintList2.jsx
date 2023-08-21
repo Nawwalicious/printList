@@ -21,12 +21,9 @@ function PrintList2()
   }
 
   function handleDeleteItem(item) {
-    for(var i=0;i<list.length;i++)
-    {
-      if(list[i]==item)
-      {setList([...list[i], null]);}
-    }
+    setList(list.filter((value) => value !== item));
   }
+  
 
   function handlePrintList(array)
   {
